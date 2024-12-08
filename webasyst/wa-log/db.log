@@ -1,0 +1,400 @@
+
+2024-12-07 19:38:03 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:38:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:38:42 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:38:45 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/non/ex...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:38:50 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/instal...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:39:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:40:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:41:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:41:33 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/non/ex...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:41:38 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/instal...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:41:49 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:41:54 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:42:08 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/non/ex...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:42:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:42:19 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/non/ex...')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}
+
+2024-12-07 19:43:13 172.25.0.1
+Query Error 1146: Table 'webasyst_db.wa_verification_channel' doesn't exist
+Query: SELECT COUNT(*) FROM wa_verification_channel WHERE `type` = 'email' AND `system` = '1'
+## wa-system/database/waModel.class.php(283)
+#0 wa-system/database/waModel.class.php(384): waModel->run('SELECT COUNT(*)...')
+#1 wa-system/database/waModel.class.php(1102): waModel->query('SELECT COUNT(*)...')
+#2 wa-system/verification/models/waVerificationChannel.model.php(31): waModel->countByField(Array)
+#3 wa-system/config/waAuthConfig.class.php(775): waVerificationChannelModel->__construct()
+#4 wa-system/config/waAuthConfig.class.php(63): waAuthConfig->getVerificationChannelModel()
+#5 wa-system/config/waBackendAuthConfig.class.php(36): waAuthConfig->ensureChannelExists()
+#6 wa-system/config/waBackendAuthConfig.class.php(24): waBackendAuthConfig->ensureVerificationChannelIdsConsistency()
+#7 wa-system/config/waAuthConfig.class.php(42): waBackendAuthConfig::getInstance()
+#8 wa-system/auth/waAuth.class.php(71): waAuthConfig::factory(Array)
+#9 wa-system/waSystem.class.php(226): waAuth->__construct(Array)
+#10 wa-system/waSystem.class.php(502): waSystem->getFactory('auth', 'waAuth', Array)
+#11 wa-system/user/waAuthUser.class.php(45): waSystem->getAuth()
+#12 wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#13 wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#14 wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#15 wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#16 wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#17 wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#18 index.php(7): waSystem->dispatch()
+#19 {main}

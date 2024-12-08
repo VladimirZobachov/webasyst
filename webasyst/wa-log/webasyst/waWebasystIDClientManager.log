@@ -1,0 +1,63 @@
+
+2024-11-04 10:42:57 172.23.0.1
+Successfully connected to WAID via install.php
+
+2024-12-07 19:59:31 172.25.0.1
+400
+{"status":"fail","errors":{"error":"check_token_fail","error_description":"Token could not pass the check.","check_token_fail":"Токен не смог пройти проверку."}}
+#0 /var/www/html/wa-system/file/waNet.class.php(203): waNet->onQueryComplete('{"status":"fail...')
+#1 /var/www/html/wa-system/waid/waWebasystIDClientManager.class.php(105): waNet->query('https://www.web...')
+#2 /var/www/html/wa-system/webasyst/lib/classes/webasystInstaller.class.php(138): waWebasystIDClientManager->connect()
+#3 /var/www/html/wa-system/webasyst/lib/classes/webasystInstaller.class.php(13): webasystInstaller->connectToWaid()
+#4 /var/www/html/wa-system/webasyst/lib/config/install.php(7): webasystInstaller->installAll()
+#5 /var/www/html/wa-system/config/waAppConfig.class.php(470): include('/var/www/html/w...')
+#6 /var/www/html/wa-system/config/waAppConfig.class.php(309): waAppConfig->install()
+#7 /var/www/html/wa-system/waSystem.class.php(102): waAppConfig->checkUpdates()
+#8 /var/www/html/wa-system/waSystem.class.php(1561): waSystem::getInstance('webasyst', Object(webasystConfig), false)
+#9 /var/www/html/wa-system/webasyst/lib/models/waAppSettings.model.php(125): wa('webasyst')
+#10 /var/www/html/wa-system/database/waModel.class.php(166): waAppSettingsModel->describe()
+#11 /var/www/html/wa-system/database/waModel.class.php(100): waModel->getFields()
+#12 /var/www/html/wa-system/database/waModel.class.php(79): waModel->getMetadata()
+#13 /var/www/html/wa-system/contact/waContact.class.php(67): waModel->__construct()
+#14 /var/www/html/wa-system/user/waUser.class.php(22): waContact->init()
+#15 /var/www/html/wa-system/user/waAuthUser.class.php(32): waUser->init()
+#16 /var/www/html/wa-system/user/waAuthUser.class.php(27): waAuthUser->init()
+#17 /var/www/html/wa-system/waSystem.class.php(251): waAuthUser->__construct(NULL, Array)
+#18 /var/www/html/wa-system/waSystem.class.php(293): waSystem::getCommonFactory('auth_user', 'waAuthUser', Array, NULL)
+#19 /var/www/html/wa-system/controller/waDispatch.class.php(115): waSystem->getUser()
+#20 /var/www/html/wa-system/controller/waDispatch.class.php(32): waDispatch->dispatchBackend('webasyst/')
+#21 /var/www/html/wa-system/waSystem.class.php(614): waDispatch->dispatch()
+#22 /var/www/html/index.php(7): waSystem->dispatch()
+#23 {main}
+
+2024-12-07 19:59:31 172.25.0.1
+array (
+  'method' => 'waWebasystIDClientManager::connect',
+  'debug' => 
+  array (
+    'headers' => 
+    array (
+      0 => 'HTTP/1.1 400 Bad Request',
+      'http_code' => 400,
+      'Server' => 'nginx',
+      'Date' => 'Sat, 07 Dec 2024 19:59:31 GMT',
+      'Content-Type' => 'application/json',
+      'Content-Length' => '186',
+      'Connection' => 'close',
+      'Cache-Control' => 'no-cache, must-revalidate',
+      'Expires' => 'Sat, 08 Jun 2011 07:15:13 GMT',
+    ),
+    'body' => '{"status":"fail","errors":{"error":"check_token_fail","error_description":"Token could not pass the check.","check_token_fail":"Токен не смог пройти проверку."}}',
+  ),
+)
+
+2024-12-07 19:59:31 172.25.0.1
+Unable to connect to WAID in install.php
+Error code fail_400: {"status":"fail","errors":{"error":"check_token_fail","error_description":"Token could not pass the check.","check_token_fail":"Токен не смог пройти проверку."}}
+[
+  'status' => false,
+  'details' => [
+    'error_code' => 'fail_400',
+    'error_message' => '{"status":"fail","errors":{"error":"check_token_fail","error_description":"Token could not pass the check.","check_token_fail":"Токен не смог пройти проверку."}}',
+  ],
+]

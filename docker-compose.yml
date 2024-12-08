@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  webasyst:
+    build: .
+    container_name: webasyst1
+    ports:
+      - "8080:80"
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: webasyst_db
+      MYSQL_USER: webasyst_user
+      MYSQL_PASSWORD: webasyst_password
+    volumes:
+      - ./webasyst:/var/www/html
+    depends_on:
+      - mysql
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql1
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: webasyst_db
+      MYSQL_USER: webasyst_user
+      MYSQL_PASSWORD: webasyst_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
