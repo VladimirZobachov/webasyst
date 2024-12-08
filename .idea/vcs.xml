@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/webasyst/Webasyst" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/webasyst/wa-apps/shop" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/webasyst/wa-apps/shop/plugins/ordercall" vcs="Git" />
-  </component>
-</project>
